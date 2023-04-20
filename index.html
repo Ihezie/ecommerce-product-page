@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div id="menu-btn">
+          <img src="images/icon-menu.svg" alt="menu-btn">
+        </div>
+
+        <div id="logo">sneakers</div>
+
+        <ul id="navigation">
+          <li id="close-btn"><img src="images/icon-close.svg" alt="close-btn"></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="dark-overlay"></div>
+
+      <div id="avatar-and-cart-container">
+        <div id="cart-btn">
+          <span id="cart-badge"></span>
+          <img src="images/icon-cart.svg" alt="cart-btn">
+        </div>
+
+        <img src="images/image-avatar.png" alt="avatar" id="avatar">
+      </div>
+    </header>
+
+    <section id="cart">
+      <h2>Cart</h2>
+
+      <div id="cart-items">
+
+        <p id="empty-message">Your cart is empty</p>
+
+      </div>
+      
+      <button type="button" id="checkout-btn">Checkout</button>
+    </section>
+
+    <main>
+        <section class="product">
+            <section class="product-images">
+              <div class="main-img">
+                <div class="carousel-btn previous-btn"><img src="images/icon-previous.svg" alt="previous-btn"></div>
+                <div class="carousel-btn next-btn"><img src="images/icon-next.svg" alt="next-btn"></div>
+                <img src="images/image-product-1.jpg" data-id="0" alt="product-1" width="300px">
+                <img src="images/image-product-2.jpg" data-id="1" alt="product-2" width="300px">
+                <img src="images/image-product-3.jpg" data-id="2" alt="product-3" width="300px">
+                <img src="images/image-product-4.jpg" data-id="3" alt="product-4" width="300px">
+              </div>
+              <div class="img-selector product-selector">
+                <img src="images/image-product-1-thumbnail.jpg" data-id="0" class="selected" alt="product-1-thumbnail">
+                <img src="images/image-product-2-thumbnail.jpg" data-id="1" alt="product-2-thumbnail">
+                <img src="images/image-product-3-thumbnail.jpg" data-id="2" alt="product-3-thumbnail">
+                <img src="images/image-product-4-thumbnail.jpg" data-id="3" alt="product-3-thumbnail">
+              </div>
+            </section>        
+
+            <section class="product-info">
+              <h3>sneaker company</h3>
+              <h2 class="product-description">Fall Limited Edition Sneakers</h2>
+              <p class="product-details">
+                  These low-profile sneakers are your perfect casual wear companion. Featuring a
+                  durable rubber outer sole, they'll withstand everything the weather can offer.
+              </p>
+              <div class="price-info">
+                  <div>
+                    <span class="product-price">$125.00</span>
+                    <span class="discount">50%</span>
+                  </div>
+                  <span class="former-price">$250.00</span>
+              </div>
+              <div class="purchase-controls">
+                  <div class="quantity-selector">
+                    <button type="button" class="decrease-qty">-</button>
+                    <input class="qty" type="text" value="0" readonly>
+                    <button type="button" class="increase-qty">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn"><img src="images/icon-cart.svg" alt="cart"> Add to cart</button>
+              </div>
+            </section>
+        </section>
+
+        <section id="light-box">
+            <div class="product-images">
+              <svg id="close-light-box-btn" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"  fill-rule="evenodd"/></svg>
+              <div class="main-img">
+                <div class="carousel-btn previous-btn"><img src="images/icon-previous.svg" alt="previous-btn"></div>
+                <div class="carousel-btn next-btn"><img src="images/icon-next.svg" alt="next-btn"></div>
+                <img src="images/image-product-1.jpg" data-id="0" alt="product-1">
+                <img src="images/image-product-2.jpg" data-id="1" alt="product-2">
+                <img src="images/image-product-3.jpg" data-id="2" alt="product-3">
+                <img src="images/image-product-4.jpg" data-id="3" alt="product-4">
+              </div>
+              <div class="img-selector light-box-selector">
+                <img src="images/image-product-1-thumbnail.jpg" data-id="0" class="selected" alt="product-1-thumbnail">
+                <img src="images/image-product-2-thumbnail.jpg" data-id="1" alt="product-2-thumbnail">
+                <img src="images/image-product-3-thumbnail.jpg" data-id="2" alt="product-3-thumbnail">
+                <img src="images/image-product-4-thumbnail.jpg" data-id="3" alt="product-3-thumbnail">
+              </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
